@@ -1,0 +1,15 @@
+.card{
+    display: flex;
+}
+.numberGroup{
+    margin-right: 10px;
+}
+.nameGroup{
+    margin-right: 10px;
+}
+.status{
+    margin-right: 10px;
+}
+.button{
+    margin-right: 10px;
+}
