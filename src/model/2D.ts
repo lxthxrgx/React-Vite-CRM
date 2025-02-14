@@ -1,4 +1,11 @@
 
+export interface IShort2D
+{
+    id:number;
+    numberGroup:number;
+    nameGroup:string;
+}
+
 export interface I2D 
 {
     id: number;

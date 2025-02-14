@@ -1,4 +1,4 @@
-const API = "https://10.10.110.105:8089/api/"
+const API = "https://192.168.0.106:8089/api/"
 
 export async function GetPdfData() {
     try {
@@ -35,7 +35,20 @@ export async function GetPdfPath(id: number) {
       return [];
     }
   }
-  
+
+  export async function GetCounterpartyData() {
+    try {
+        const response = await fetch(API + "counterparty", { method: "GET" });
+        if (!response.ok) {
+            throw new Error(`Ошибка HTTP: ${response.status}`);
+        }
+        return await response.json();
+    } catch (error) {
+        console.error("Ошибка получения PDF данных:", error);
+        throw error;
+    }
+}
+
 // export function SendError(error:unknown)
 // {
 

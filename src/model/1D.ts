@@ -4,7 +4,7 @@ export interface I1D
 {
     id:number;
     nameGroup:string;
-    D2:I2D[];
+    numberGroup:I2D[];
     fullname:string;
     address:string;
     edryofop:string;
